@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c70749f8-9f79-4ade-ad29-8531c0112fa2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ms-one/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/spring-boot-boilerplate.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discover-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discover-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-1/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-1/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-1/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-1/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-1/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-1/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-1/src/main/java/com/discovery/client/DiscoveryClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/src/main/java/com/discovery/client/MsOneApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-1/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-1/src/test/java/com/discovery/client/DiscoveryClientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/src/test/java/com/discovery/client/MsOneApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/config-server">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/discover-server">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/ms-1">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/ms-one">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/ms-1">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/discover-server">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2gAl61azopIbcbJdT66Ci2rrxAh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.DiscoveryClientApplication.executor": "Run",
+    "Gradle.Tests in 'discover-server'.executor": "Run",
+    "Gradle.config-server [:ConfigServerApplication.main()].executor": "Run",
+    "Gradle.discover-server [:DiscoverServerApplication.main()].executor": "Run",
+    "Gradle.ms-1 [:DiscoveryClientApplication.main()].executor": "Run",
+    "Gradle.ms-1.executor": "Run",
+    "Gradle.ms-one [:DiscoveryClientApplication.main()].executor": "Run",
+    "Gradle.ms-one [:MsOneApplication.main()].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/prateek.p@ADCNST.COM/working/spring-boot-boilerplate",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MsOneApplication">
+    <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.configserver.ConfigServerApplication" />
+      <module name="config-server.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.configserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoverServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.discovery.server.DiscoverServerApplication" />
+      <module name="discover-server.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.discovery.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsOneApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.discovery.client.MsOneApplication" />
+      <module name="ms-one.main" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=qa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.discovery.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests in 'discover-server'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/discover-server" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ms-1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ms-1" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="spring-boot-boilerplate" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="spring-boot-boilerplate" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ConfigServerApplication" />
+      <item itemvalue="Application.DiscoverServerApplication" />
+      <item itemvalue="Application.MsOneApplication" />
+      <item itemvalue="Gradle.ms-1" />
+      <item itemvalue="Gradle.Tests in 'discover-server'" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.ms-1" />
+        <item itemvalue="Application.MsOneApplication" />
+        <item itemvalue="Application.ConfigServerApplication" />
+        <item itemvalue="Application.DiscoverServerApplication" />
+        <item itemvalue="Gradle.Tests in 'discover-server'" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c70749f8-9f79-4ade-ad29-8531c0112fa2" name="Changes" comment="" />
+      <created>1715148083380</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715148083380</updated>
+    </task>
+    <servers />
+  </component>
+</project>
