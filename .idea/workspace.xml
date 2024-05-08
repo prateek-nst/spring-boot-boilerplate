@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c70749f8-9f79-4ade-ad29-8531c0112fa2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ms-one/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/spring-boot-boilerplate.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/discover-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discover-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-1/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-1/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-1/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-1/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-1/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-1/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-1/src/main/java/com/discovery/client/DiscoveryClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/src/main/java/com/discovery/client/MsOneApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-1/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-1/src/test/java/com/discovery/client/DiscoveryClientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/src/test/java/com/discovery/client/MsOneApplicationTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="c70749f8-9f79-4ade-ad29-8531c0112fa2" name="Changes" comment="Add Config Server" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +45,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/prateek-nst/spring-boot-boilerplate.git",
+    "accountId": "3a19b8e6-c813-485e-88db-7a7e86dd9553"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -221,6 +207,35 @@
       <option name="presentableId" value="Default" />
       <updated>1715148083380</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add Config Server">
+      <option name="closed" value="true" />
+      <created>1715164690022</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715164690022</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add Config Server">
+      <option name="closed" value="true" />
+      <created>1715164731097</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715164731097</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add Config Server">
+      <option name="closed" value="true" />
+      <created>1715164747360</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715164747360</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add Config Server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Config Server" />
   </component>
 </project>
