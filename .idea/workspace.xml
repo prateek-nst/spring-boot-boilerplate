@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c70749f8-9f79-4ade-ad29-8531c0112fa2" name="Changes" comment="Add Config Server" />
+    <list default="true" id="c70749f8-9f79-4ade-ad29-8531c0112fa2" name="Changes" comment="Add Config Server">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-one/src/main/java/com/discovery/client/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-one/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +22,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/discover-server">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/gateway">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/ms-1">
@@ -42,15 +52,28 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/prateek-nst/spring-boot-boilerplate.git",
-    "accountId": "3a19b8e6-c813-485e-88db-7a7e86dd9553"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;prateek-nst&quot;
   }
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/prateek-nst/spring-boot-boilerplate.git&quot;,
+    &quot;accountId&quot;: &quot;3a19b8e6-c813-485e-88db-7a7e86dd9553&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -61,31 +84,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.DiscoveryClientApplication.executor": "Run",
-    "Gradle.Tests in 'discover-server'.executor": "Run",
-    "Gradle.config-server [:ConfigServerApplication.main()].executor": "Run",
-    "Gradle.discover-server [:DiscoverServerApplication.main()].executor": "Run",
-    "Gradle.ms-1 [:DiscoveryClientApplication.main()].executor": "Run",
-    "Gradle.ms-1.executor": "Run",
-    "Gradle.ms-one [:DiscoveryClientApplication.main()].executor": "Run",
-    "Gradle.ms-one [:MsOneApplication.main()].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/prateek.p@ADCNST.COM/working/spring-boot-boilerplate",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DiscoveryClientApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build discover-server.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'discover-server'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.config-server [:ConfigServerApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.discover-server [:DiscoverServerApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.gateway [:GatewayApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ms-1 [:DiscoveryClientApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ms-1.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ms-one [:DiscoveryClientApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ms-one [:MsOneApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/prateek.p@ADCNST.COM/working/spring-boot-boilerplate&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MsOneApplication">
+  <component name="RunManager" selected="Application.GatewayApplication">
     <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.configserver.ConfigServerApplication" />
       <module name="config-server.main" />
@@ -112,6 +138,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.gateway.GatewayApplication" />
+      <module name="gateway.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MsOneApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.discovery.client.MsOneApplication" />
       <module name="ms-one.main" />
@@ -125,28 +164,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="Tests in 'discover-server'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/discover-server" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
     </configuration>
     <configuration name="ms-1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -182,19 +199,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.GatewayApplication" />
       <item itemvalue="Application.ConfigServerApplication" />
       <item itemvalue="Application.DiscoverServerApplication" />
       <item itemvalue="Application.MsOneApplication" />
       <item itemvalue="Gradle.ms-1" />
-      <item itemvalue="Gradle.Tests in 'discover-server'" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GatewayApplication" />
         <item itemvalue="Gradle.ms-1" />
         <item itemvalue="Application.MsOneApplication" />
         <item itemvalue="Application.ConfigServerApplication" />
         <item itemvalue="Application.DiscoverServerApplication" />
-        <item itemvalue="Gradle.Tests in 'discover-server'" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +248,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715164747360</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add Config Server">
+      <option name="closed" value="true" />
+      <created>1715164865966</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715164865966</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
