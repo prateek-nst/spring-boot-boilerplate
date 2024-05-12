@@ -1,0 +1,89 @@
+version: '3'
+services:
+    config-server:
+        image: pnst/config-server:v1
+        ports:
+            - "8071:8071"
+        healthcheck:
+            test: "curl --fail --silent localhost:8071/actuator/health/readiness | grep UP || exit 1"
+            interval: 10s
+            timeout: 5s
+            retries: 10
+        networks:
+            pnst:
+
+    discover-server:
+        image: pnst/discover-server:v1
+        ports:
+            -   "8761:8761"
+        depends_on:
+            config-server:
+                condition: service_healthy
+        healthcheck:
+            test: "curl --fail --silent localhost:8761/actuator/health/readiness | grep UP || exit 1"
+            interval: 10s
+            timeout: 5s
+            retries: 10
+        networks:
+            pnst:
+
+    ms-one:
+        image: pnst/ms-one:v1
+        ports:
+            -   "8081:8081"
+        depends_on:
+            discover-server:
+                condition: service_healthy
+
+        healthcheck:
+            test: "curl --fail --silent localhost:8081/actuator/health/readiness | grep UP || exit 1"
+            interval: 10s
+            timeout: 5s
+            retries: 10
+        networks:
+                pnst:
+        environment:
+            EUREKA_URI: http://discover-server:8761/eureka/
+            CONFIG_SERVER: http://config-server:8071/
+
+    ms-two:
+        image: pnst/ms-two:v1
+        ports:
+            -   "8082:8082"
+        depends_on:
+            discover-server:
+                condition: service_healthy
+
+        healthcheck:
+            test: "curl --fail --silent localhost:8082/actuator/health/readiness | grep UP || exit 1"
+            interval: 10s
+            timeout: 5s
+            retries: 10
+        networks:
+            pnst:
+        environment:
+            EUREKA_URI: http://discover-server:8761/eureka/
+
+    gateway:
+        image: pnst/gateway:v1
+        ports:
+            -   "8888:8888"
+        depends_on:
+            ms-one:
+                condition: service_healthy
+            ms-two:
+                condition: service_healthy
+
+        healthcheck:
+            test: "curl --fail --silent localhost:8888/actuator/health/readiness | grep UP || exit 1"
+            interval: 10s
+            timeout: 5s
+            retries: 10
+        networks:
+            pnst:
+        environment:
+            EUREKA_URI: http://discover-server:8761/eureka/
+            CONFIG_SERVER: http://config-server:8071/
+
+networks:
+    pnst:

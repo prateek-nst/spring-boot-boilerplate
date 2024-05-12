@@ -14,12 +14,12 @@ spring:
           clone-on-start: true
           force-pull: true
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
-  instance:
-    preferIpAddress: true
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+#  instance:
+#    preferIpAddress: true
 
 management:
   endpoints:
@@ -29,7 +29,7 @@ management:
 #  health:
 #    readiness-state:
 #      enabled: true
-#    liveness-state:
+#    liveness-state:check port ls
 #      enabled: false
 
   endpoint:
@@ -39,3 +39,9 @@ management:
 
 server:
   port: 8071
+  healthcheck:
+    test: "curl --fail --silent localhost:8071/actuator/health/readiness | grep UP || exit 1"
+    interval: 10s
+    timeout: 5s
+    retries: 10
+    start_period: 10s
