@@ -1,0 +1,30 @@
+global:
+  scrape_interval:     5s # Set the scrape interval to every 5 seconds.
+  evaluation_interval: 5s # Evaluate rules every 5 seconds.
+
+scrape_configs:
+  - job_name: 'ms-one'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: [ 'ms-one:8081' ]
+
+  - job_name: 'ms-two'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: [ 'ms-two:8082' ]
+
+  - job_name: 'gateway-server'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: [ 'gateway-server:8888' ]
+
+  - job_name: 'discover-server'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: [ 'discover-server:8761' ]
+
+  - job_name: 'config-server'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: [ 'config-server:8071' ]
+  

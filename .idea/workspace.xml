@@ -4,12 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c70749f8-9f79-4ade-ad29-8531c0112fa2" name="Changes" comment="Gateway custom route">
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/filters/FilterUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/filters/RequestTraceFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/filters/ResponseTraceFilter.java" afterDir="false" />
+    <list default="true" id="65cb5b0f-a6a4-426e-bcec-5c35623c3aa6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/spring-boot-boilerplate.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/observability/alloy/alloy-local-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/observability/grafana/datasource.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/observability/loki/loki-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/observability/prometheus/prometheus.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/observability/tempo/tempo.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +34,6 @@
     <projectState path="$PROJECT_DIR$/gateway">
       <ProjectState />
     </projectState>
-    <projectState path="$PROJECT_DIR$/ms-1">
-      <ProjectState />
-    </projectState>
     <projectState path="$PROJECT_DIR$/ms-one">
       <ProjectState />
     </projectState>
@@ -39,77 +44,22 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$/ms-1">
-          <activation />
-        </task>
-        <task path="$PROJECT_DIR$/discover-server">
-          <activation />
-        </task>
-        <task path="$PROJECT_DIR$/config-server">
-          <activation />
-        </task>
-        <task path="$PROJECT_DIR$/ms-one">
-          <activation />
-        </task>
-        <task path="$PROJECT_DIR$/ms-two">
-          <activation />
-        </task>
-        <task path="$PROJECT_DIR$/gateway">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ms-two" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ms-two" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ms-two" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="jib" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;prateek-nst&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/prateek-nst/spring-boot-boilerplate.git&quot;,
-    &quot;accountId&quot;: &quot;3a19b8e6-c813-485e-88db-7a7e86dd9553&quot;
-  }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
-  <component name="ProjectId" id="2gAl61azopIbcbJdT66Ci2rrxAh" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2gOiT50HmYxylWgmQadVsvgBuau" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -117,238 +67,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.DiscoveryClientApplication.executor": "Run",
-    "Gradle.Build discover-server.executor": "Run",
-    "Gradle.Load Gradle Dependencies.executor": "Run",
-    "Gradle.Tests in 'discover-server'.executor": "Run",
-    "Gradle.config-server [:ConfigServerApplication.main()].executor": "Run",
-    "Gradle.config-server [bootBuildImage].executor": "Run",
-    "Gradle.config-server [jibDockerBuild].executor": "Run",
-    "Gradle.discover-server [:DiscoverServerApplication.main()].executor": "Run",
-    "Gradle.discover-server [bootBuildImage].executor": "Run",
-    "Gradle.discover-server [jibDockerBuild].executor": "Run",
-    "Gradle.gateway [:GatewayApplication.main()].executor": "Run",
-    "Gradle.gateway [jibBuildTar].executor": "Run",
-    "Gradle.gateway [jibDockerBuild].executor": "Run",
-    "Gradle.ms-1 [:DiscoveryClientApplication.main()].executor": "Run",
-    "Gradle.ms-1.executor": "Run",
-    "Gradle.ms-one [:DiscoveryClientApplication.main()].executor": "Run",
-    "Gradle.ms-one [:MsOneApplication.main()].executor": "Run",
-    "Gradle.ms-one [jibDockerBuild].executor": "Run",
-    "Gradle.ms-two [:MsTwoApplication.main()].executor": "Run",
-    "Gradle.ms-two [jibDockerBuild].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/prateek.p@ADCNST.COM/working/spring-boot-boilerplate",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
-  },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "PLAIN_TEXT"
-    ]
+    "last_opened_file_path": "/home/prateek.p@ADCNST.COM/working/spring-boot-boilerplate"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
-  </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="gradle jibDockerBuild" />
-    </option>
-  </component>
-  <component name="RunDashboard">
-    <option name="openRunningConfigInTab" value="true" />
-  </component>
-  <component name="RunManager" selected="Application.GatewayApplication">
-    <configuration name="DiscoverServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.discovery.server.DiscoverServerApplication" />
-      <module name="discover-server.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.discovery.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.gateway.GatewayApplication" />
-      <module name="gateway.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.gateway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsOneApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.discovery.client.MsOneApplication" />
-      <module name="ms-one.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.discovery.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsTwoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.mstwo.MsTwoApplication" />
-      <module name="ms-two.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.mstwo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ms-two [jibDockerBuild]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/ms-two" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="jibDockerBuild" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="spring-boot-boilerplate" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="spring-boot-boilerplate" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
-      <deployment type="docker-image" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Application.MsOneApplication" />
-      <item itemvalue="Application.MsTwoApplication" />
-      <item itemvalue="Application.GatewayApplication" />
-      <item itemvalue="Application.DiscoverServerApplication" />
-      <item itemvalue="Gradle.ms-two [jibDockerBuild]" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.MsTwoApplication" />
-        <item itemvalue="Application.MsOneApplication" />
-        <item itemvalue="Application.GatewayApplication" />
-        <item itemvalue="Application.DiscoverServerApplication" />
-        <item itemvalue="Gradle.ms-two [jibDockerBuild]" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c70749f8-9f79-4ade-ad29-8531c0112fa2" name="Changes" comment="" />
-      <created>1715148083380</created>
+      <changelist id="65cb5b0f-a6a4-426e-bcec-5c35623c3aa6" name="Changes" comment="" />
+      <created>1715575028335</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1715148083380</updated>
+      <updated>1715575028335</updated>
     </task>
-    <task id="LOCAL-00001" summary="Add Config Server">
-      <option name="closed" value="true" />
-      <created>1715164690022</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1715164690022</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Add Config Server">
-      <option name="closed" value="true" />
-      <created>1715164731097</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1715164731097</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Add Config Server">
-      <option name="closed" value="true" />
-      <created>1715164747360</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1715164747360</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Add Config Server">
-      <option name="closed" value="true" />
-      <created>1715164865966</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1715164865966</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Add api gateway">
-      <option name="closed" value="true" />
-      <created>1715256221954</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1715256221954</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Gateway custom route">
-      <option name="closed" value="true" />
-      <created>1715530709466</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1715530709466</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add Config Server" />
-    <MESSAGE value="Add api gateway" />
-    <MESSAGE value="Gateway custom route" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gateway custom route" />
   </component>
 </project>
