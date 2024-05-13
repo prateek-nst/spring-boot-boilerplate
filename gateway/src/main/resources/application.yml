@@ -47,3 +47,9 @@ info:
   app:
     name: "gatewayserver"
     description: "desc for gateway"
+
+logging:
+  level:
+    com:
+      example:
+        gateway: DEBUG

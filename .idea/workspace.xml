@@ -4,23 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c70749f8-9f79-4ade-ad29-8531c0112fa2" name="Changes" comment="Add api gateway">
-      <change afterPath="$PROJECT_DIR$/ms-one/src/main/java/com/discovery/client/dto/PostDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-one/src/main/java/com/discovery/client/services/client/PostFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-two/src/main/java/com/example/mstwo/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="c70749f8-9f79-4ade-ad29-8531c0112fa2" name="Changes" comment="Gateway custom route">
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/filters/FilterUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/filters/RequestTraceFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/filters/ResponseTraceFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discover-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/discover-server/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discover-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discover-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/GatewayApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-one/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-one/src/main/java/com/discovery/client/MsOneApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/src/main/java/com/discovery/client/MsOneApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-one/src/main/java/com/discovery/client/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/src/main/java/com/discovery/client/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-one/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -334,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715256221954</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Gateway custom route">
+      <option name="closed" value="true" />
+      <created>1715530709466</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715530709466</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -351,6 +348,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add Config Server" />
     <MESSAGE value="Add api gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add api gateway" />
+    <MESSAGE value="Gateway custom route" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gateway custom route" />
   </component>
 </project>
