@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65cb5b0f-a6a4-426e-bcec-5c35623c3aa6" name="Changes" comment="add entries to prometheus.yml">
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/config/SecurityConfig.java" afterDir="false" />
+    <list default="true" id="65cb5b0f-a6a4-426e-bcec-5c35623c3aa6" name="Changes" comment="add spring security">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +100,7 @@
     "Gradle.config-server [jibDockerBuild].executor": "Run",
     "Gradle.discover-server [:DiscoverServerApplication.main()].executor": "Run",
     "Gradle.discover-server [jibDockerBuild].executor": "Run",
-    "Gradle.gateway [:GatewayApplication.main()].executor": "Run",
+    "Gradle.gateway [:GatewayApplication.main()].executor": "Debug",
     "Gradle.gateway [build].executor": "Run",
     "Gradle.gateway [clean].executor": "Run",
     "Gradle.gateway [jibDockerBuild].executor": "Run",
@@ -111,7 +111,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/prateek.p@ADCNST.COM/working/spring-boot-boilerplate"
+    "last_opened_file_path": "/home/prateek.p@ADCNST.COM/working/spring-boot-boilerplate",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   },
   "keyToStringList": {
     "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
@@ -259,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715661020187</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add spring security">
+      <option name="closed" value="true" />
+      <created>1715667534782</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715667534782</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -267,6 +278,18 @@
     <MESSAGE value="small change" />
     <MESSAGE value="move loki to 2.8" />
     <MESSAGE value="add entries to prometheus.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="add entries to prometheus.yml" />
+    <MESSAGE value="add spring security" />
+    <option name="LAST_COMMIT_MESSAGE" value="add spring security" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/config/KeycloakRoleConverter.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
