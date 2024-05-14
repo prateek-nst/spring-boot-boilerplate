@@ -2,7 +2,7 @@ version: '3'
 
 services:
     read:
-        image: grafana/loki:3.0.0
+        image: grafana/loki:2.8.3
         command: "-config.file=/etc/loki/config.yaml -target=read"
         ports:
             - 3101:3100
@@ -23,7 +23,7 @@ services:
                     - loki
 
     write:
-        image: grafana/loki:3.0.0
+        image: grafana/loki:2.8.3
         command: "-config.file=/etc/loki/config.yaml -target=write"
         ports:
             - 3102:3100
@@ -41,18 +41,16 @@ services:
         networks:
             <<: *loki-dns
 
-    alloy:
-        image: grafana/alloy:latest
+    promtail:
+        image: grafana/promtail:2.8.3
         volumes:
-            - ./observability/alloy/alloy-local-config.yaml:/etc/alloy/config.alloy:ro
+            - ./observability/promtail/promtail-local-config.yaml:/etc/promtail/config.yaml:ro
             - /var/run/docker.sock:/var/run/docker.sock
-        command: run --server.http.listen-addr=0.0.0.0:12345 --storage.path=/var/lib/alloy/data /etc/alloy/config.alloy
-        ports:
-            - 12345:12345
+        command: -config.file=/etc/promtail/config.yaml
         depends_on:
             - gateway
         networks:
-            - pnst
+            pnst:
 #        extends:
 #            file: common-config.yml
 #            service: network-deploy-service
@@ -81,20 +79,20 @@ services:
             timeout: 20s
             retries: 5
         networks:
-            - pnst
+            pnst:
 #        extends:
 #            file: common-config.yml
 #            service: network-deploy-service
 
     prometheus:
-        image: prom/prometheus:v2.50.1
+        image: prom/prometheus:v2.45.0
         container_name: prometheus
         ports:
             - "9090:9090"
         volumes:
             - ./observability/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
         networks:
-            - pnst
+            pnst:
 #        extends:
 #            file: common-config.yml
 #            service: network-deploy-service
@@ -109,10 +107,10 @@ services:
         volumes:
             - ./observability/tempo/tempo.yml:/etc/tempo-config.yml
         networks:
-            - pnst
-#        extends:
-#            file: common-config.yml
-#            service: network-deploy-service
+            pnst:
+#            extends:
+#                file: common-config.yml
+#                service: network-deploy-service
 
     grafana:
         image: grafana/grafana:latest
@@ -137,26 +135,10 @@ services:
             timeout: 5s
             retries: 5
         networks:
-            - pnst
-#        extends:
-#            file: common-config.yml
-#            service: network-deploy-service
-
-    backend:
-        image: grafana/loki:3.0.0
-        volumes:
-            - ./observability/loki/loki-config.yaml:/etc/loki/config.yaml
-        ports:
-            - "3100"
-            - "7946"
-        command: "-config.file=/etc/loki/config.yaml -target=backend -legacy-read-mode=false"
-        depends_on:
-            - gateway
-        networks:
-            - pnst
-#        extends:
-#            file: common-config.yml
-#            service: network-deploy-service
+            pnst:
+#            extends:
+#                file: common-config.yml
+#                service: network-deploy-service
 
     gateway:
         image: nginx:latest
@@ -224,14 +206,11 @@ services:
             interval: 10s
             timeout: 5s
             retries: 5
-
         networks:
-            - pnst
-
-#        extends:
-#            file: common-config.yml
-#            service: network-deploy-service
-
+            pnst:
+#            extends:
+#                file: common-config.yml
+#                service: network-deploy-service
 
     config-server:
         image: pnst/config-server:v1

@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65cb5b0f-a6a4-426e-bcec-5c35623c3aa6" name="Changes" comment="Add grafana">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="65cb5b0f-a6a4-426e-bcec-5c35623c3aa6" name="Changes" comment="small change">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-one/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observability/alloy/alloy-local-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/observability_old/alloy/alloy-local-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observability/grafana/datasource.yml" beforeDir="false" afterPath="$PROJECT_DIR$/observability_old/grafana/datasource.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observability/loki/loki-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/observability_old/loki/loki-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observability/prometheus/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/observability_old/prometheus/prometheus.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observability/tempo/tempo.yml" beforeDir="false" afterPath="$PROJECT_DIR$/observability_old/tempo/tempo.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,9 +70,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2gOiT50HmYxylWgmQadVsvgBuau" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -78,6 +81,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.config-server [:ConfigServerApplication.main()].executor": "Run",
+    "Gradle.discover-server [:DiscoverServerApplication.main()].executor": "Run",
+    "Gradle.gateway [:GatewayApplication.main()].executor": "Run",
+    "Gradle.ms-one [:MsOneApplication.main()].executor": "Run",
     "Gradle.ms-one [jibDockerBuild].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -85,7 +92,64 @@
     "last_opened_file_path": "/home/prateek.p@ADCNST.COM/working/spring-boot-boilerplate"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.GatewayApplication">
+    <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.configserver.ConfigServerApplication" />
+      <module name="config-server.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.configserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoverServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.discovery.server.DiscoverServerApplication" />
+      <module name="discover-server.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.discovery.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.gateway.GatewayApplication" />
+      <module name="gateway.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsOneApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.discovery.client.MsOneApplication" />
+      <module name="ms-one.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.discovery.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ms-one [jibDockerBuild]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -110,6 +174,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GatewayApplication" />
+        <item itemvalue="Application.MsOneApplication" />
+        <item itemvalue="Application.DiscoverServerApplication" />
+        <item itemvalue="Application.ConfigServerApplication" />
         <item itemvalue="Gradle.ms-one [jibDockerBuild]" />
       </list>
     </recent_temporary>
@@ -131,11 +199,20 @@
       <option name="project" value="LOCAL" />
       <updated>1715605371227</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="small change">
+      <option name="closed" value="true" />
+      <created>1715619087836</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715619087836</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add grafana" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add grafana" />
+    <MESSAGE value="small change" />
+    <option name="LAST_COMMIT_MESSAGE" value="small change" />
   </component>
 </project>
