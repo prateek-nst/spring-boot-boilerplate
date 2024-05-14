@@ -59,4 +59,4 @@ logging:
   level:
     com:
       example:
-        gateway: DEBUG
+        gateway: INFO
