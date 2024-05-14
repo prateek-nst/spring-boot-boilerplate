@@ -4,15 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65cb5b0f-a6a4-426e-bcec-5c35623c3aa6" name="Changes" comment="small change">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="65cb5b0f-a6a4-426e-bcec-5c35623c3aa6" name="Changes" comment="move loki to 2.8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/observability/alloy/alloy-local-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/observability_old/alloy/alloy-local-config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/observability/grafana/datasource.yml" beforeDir="false" afterPath="$PROJECT_DIR$/observability_old/grafana/datasource.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/observability/loki/loki-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/observability_old/loki/loki-config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/observability/prometheus/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/observability_old/prometheus/prometheus.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/observability/tempo/tempo.yml" beforeDir="false" afterPath="$PROJECT_DIR$/observability_old/tempo/tempo.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discover-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/discover-server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discover-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discover-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-one/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-one/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-two/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ms-two/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-two/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-two/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observability/prometheus/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/observability/prometheus/prometheus.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,25 +46,21 @@
         <task path="$PROJECT_DIR$/ms-one">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/gateway">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/config-server">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/discover-server">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ms-two">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ms-one" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ms-one" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ms-one" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="jib" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -82,10 +82,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.config-server [:ConfigServerApplication.main()].executor": "Run",
+    "Gradle.config-server [jibDockerBuild].executor": "Run",
     "Gradle.discover-server [:DiscoverServerApplication.main()].executor": "Run",
+    "Gradle.discover-server [jibDockerBuild].executor": "Run",
     "Gradle.gateway [:GatewayApplication.main()].executor": "Run",
+    "Gradle.gateway [jibDockerBuild].executor": "Run",
     "Gradle.ms-one [:MsOneApplication.main()].executor": "Run",
     "Gradle.ms-one [jibDockerBuild].executor": "Run",
+    "Gradle.ms-two [:MsTwoApplication.main()].executor": "Run",
+    "Gradle.ms-two [jibDockerBuild].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
@@ -97,58 +102,72 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GatewayApplication">
-    <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.configserver.ConfigServerApplication" />
-      <module name="config-server.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.configserver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Gradle.ms-two [jibDockerBuild]">
+    <configuration name="config-server [jibDockerBuild]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/config-server" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jibDockerBuild" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
     </configuration>
-    <configuration name="DiscoverServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.discovery.server.DiscoverServerApplication" />
-      <module name="discover-server.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.discovery.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="discover-server [jibDockerBuild]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/discover-server" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jibDockerBuild" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
     </configuration>
-    <configuration name="GatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.gateway.GatewayApplication" />
-      <module name="gateway.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.gateway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsOneApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.discovery.client.MsOneApplication" />
-      <module name="ms-one.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.discovery.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="gateway [jibDockerBuild]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/gateway" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jibDockerBuild" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="ms-one [jibDockerBuild]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -172,13 +191,35 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="ms-two [jibDockerBuild]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ms-two" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jibDockerBuild" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GatewayApplication" />
-        <item itemvalue="Application.MsOneApplication" />
-        <item itemvalue="Application.DiscoverServerApplication" />
-        <item itemvalue="Application.ConfigServerApplication" />
+        <item itemvalue="Gradle.ms-two [jibDockerBuild]" />
         <item itemvalue="Gradle.ms-one [jibDockerBuild]" />
+        <item itemvalue="Gradle.gateway [jibDockerBuild]" />
+        <item itemvalue="Gradle.discover-server [jibDockerBuild]" />
+        <item itemvalue="Gradle.config-server [jibDockerBuild]" />
       </list>
     </recent_temporary>
   </component>
@@ -207,12 +248,21 @@
       <option name="project" value="LOCAL" />
       <updated>1715619087836</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="move loki to 2.8">
+      <option name="closed" value="true" />
+      <created>1715647740209</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715647740209</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add grafana" />
     <MESSAGE value="small change" />
-    <option name="LAST_COMMIT_MESSAGE" value="small change" />
+    <MESSAGE value="move loki to 2.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="move loki to 2.8" />
   </component>
 </project>

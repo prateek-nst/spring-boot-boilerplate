@@ -26,6 +26,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
 	implementation 'org.springframework.cloud:spring-cloud-starter-config'
+	implementation group: 'io.micrometer', name: 'micrometer-registry-prometheus', version: '1.12.5'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
