@@ -23,6 +23,7 @@ public class SecurityConfig {
     public SecurityWebFilterChain securityFilterChain(ServerHttpSecurity httpSecurity) {
         httpSecurity.authorizeExchange(authorizeExchangeSpec ->
             authorizeExchangeSpec
+                    .pathMatchers("/actuator/**").permitAll()
                     .pathMatchers("/ms-two/**").permitAll()
                     .pathMatchers("/ms-one/**").hasRole("EDITOR"))
 

@@ -24,6 +24,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.cloud:spring-cloud-config-server'
 	implementation group: 'io.micrometer', name: 'micrometer-registry-prometheus', version: '1.12.5'
+	implementation group: 'io.opentelemetry.javaagent', name: 'opentelemetry-javaagent', version: '2.3.0'
+//	implementation(platform("io.opentelemetry:opentelemetry-bom:1.38.0"))
+//	implementation("io.opentelemetry:opentelemetry-api")
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
@@ -41,4 +44,8 @@ jib {
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+task showMeCache doLast() {
+	configurations.compileClasspath.each { println it }
 }

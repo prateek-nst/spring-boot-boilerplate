@@ -49,3 +49,7 @@ server:
     timeout: 5s
     retries: 10
     start_period: 10s
+
+logging:
+  pattern:
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"

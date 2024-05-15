@@ -23,6 +23,7 @@ ext {
 dependencies {
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server'
 	implementation group: 'io.micrometer', name: 'micrometer-registry-prometheus', version: '1.12.5'
+	implementation group: 'io.opentelemetry.javaagent', name: 'opentelemetry-javaagent', version: '2.3.0'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

@@ -78,6 +78,7 @@ services:
             interval: 15s
             timeout: 20s
             retries: 5
+
         networks:
             pnst:
 #        extends:
@@ -218,9 +219,14 @@ services:
             - "8071:8071"
         healthcheck:
             test: "curl --fail --silent localhost:8071/actuator/health/readiness | grep UP || exit 1"
-            interval: 10s
+            interval: 40s
             timeout: 5s
-            retries: 10
+            retries: 20
+        environment:
+            JAVA_TOOL_OPTIONS: "-javaagent:/app/libs/opentelemetry-javaagent-2.3.0.jar"
+            OTEL_EXPORTER_OTLP_ENDPOINT: http://tempo:4317/v1
+            OTEL_METRICS_EXPORTER: none
+            OTEL_SERVICE_NAME: "config-server"
         networks:
             - pnst
 
@@ -233,9 +239,14 @@ services:
                 condition: service_healthy
         healthcheck:
             test: "curl --fail --silent localhost:8761/actuator/health/readiness | grep UP || exit 1"
-            interval: 10s
+            interval: 40s
             timeout: 5s
-            retries: 10
+            retries: 20
+        environment:
+            JAVA_TOOL_OPTIONS: "-javaagent:opentelemetry-javaagent-2.3.0.jar"
+            OTEL_EXPORTER_OTLP_ENDPOINT: http://tempo:4317/v1
+            OTEL_METRICS_EXPORTER: none
+            OTEL_SERVICE_NAME: "discover-server"
         networks:
             - pnst
 
@@ -249,14 +260,18 @@ services:
 
         healthcheck:
             test: "curl --fail --silent localhost:8081/actuator/health/readiness | grep UP || exit 1"
-            interval: 10s
+            interval: 40s
             timeout: 5s
-            retries: 10
+            retries: 20
         networks:
             - pnst
         environment:
             EUREKA_URI: http://discover-server:8761/eureka/
             CONFIG_SERVER: http://config-server:8071/
+            JAVA_TOOL_OPTIONS: "-javaagent:opentelemetry-javaagent-2.3.0.jar"
+            OTEL_EXPORTER_OTLP_ENDPOINT: http://tempo:4317/v1
+            OTEL_METRICS_EXPORTER: none
+            OTEL_SERVICE_NAME: "ms-one"
 
     ms-two:
         image: pnst/ms-two:v1
@@ -268,13 +283,18 @@ services:
 
         healthcheck:
             test: "curl --fail --silent localhost:8082/actuator/health/readiness | grep UP || exit 1"
-            interval: 10s
+            interval: 40s
             timeout: 5s
-            retries: 10
+            retries: 20
         networks:
             - pnst
         environment:
             EUREKA_URI: http://discover-server:8761/eureka/
+            CONFIG_SERVER: http://config-server:8071/
+            JAVA_TOOL_OPTIONS: "-javaagent:opentelemetry-javaagent-2.3.0.jar"
+            OTEL_EXPORTER_OTLP_ENDPOINT: http://tempo:4317/v1
+            OTEL_METRICS_EXPORTER: none
+            OTEL_SERVICE_NAME: "ms-two"
 
     gateway-server:
         image: pnst/gateway:v1
@@ -288,14 +308,18 @@ services:
 
         healthcheck:
             test: "curl --fail --silent localhost:8888/actuator/health/readiness | grep UP || exit 1"
-            interval: 10s
+            interval: 40s
             timeout: 5s
-            retries: 10
+            retries: 20
         networks:
             - pnst
         environment:
             EUREKA_URI: http://discover-server:8761/eureka/
             CONFIG_SERVER: http://config-server:8071/
+            JAVA_TOOL_OPTIONS: "-javaagent:opentelemetry-javaagent-2.3.0.jar"
+            OTEL_EXPORTER_OTLP_ENDPOINT: http://tempo:4317/v1
+            OTEL_METRICS_EXPORTER: none
+            OTEL_SERVICE_NAME: "gateway-server"
 
 networks:
     pnst:

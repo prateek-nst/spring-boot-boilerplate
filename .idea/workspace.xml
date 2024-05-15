@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65cb5b0f-a6a4-426e-bcec-5c35623c3aa6" name="Changes" comment="add spring security">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="65cb5b0f-a6a4-426e-bcec-5c35623c3aa6" name="Changes" comment="add authentication and authorization">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discover-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/discover-server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discover-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discover-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-one/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-one/src/main/java/com/discovery/client/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/src/main/java/com/discovery/client/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-one/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-one/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-two/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ms-two/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-two/src/main/java/com/example/mstwo/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-two/src/main/java/com/example/mstwo/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-two/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-two/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +66,21 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="config-server" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="config-server" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="config-server" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="jib" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="gateway" type="f1a62948:ProjectNode" />
               </path>
               <path>
@@ -66,7 +92,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="gateway" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
+                <item name="jib" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -112,9 +138,10 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/prateek.p@ADCNST.COM/working/spring-boot-boilerplate",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.38546458",
+    "settings.editor.selected.configurable": "Settings.Markdown"
   },
   "keyToStringList": {
     "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
@@ -127,50 +154,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GatewayApplication">
-    <configuration name="GatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.gateway.GatewayApplication" />
-      <module name="gateway.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.gateway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsOneApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.discovery.client.MsOneApplication" />
-      <module name="ms-one.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.discovery.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MsTwoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.mstwo.MsTwoApplication" />
-      <module name="ms-two.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.mstwo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="gateway [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.config-server [jibDockerBuild]">
+    <configuration name="config-server [jibDockerBuild]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/gateway" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/config-server" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -178,7 +166,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value="jibDockerBuild" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -189,7 +177,29 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="gateway [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="discover-server [jibDockerBuild]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/discover-server" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jibDockerBuild" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="gateway [jibDockerBuild]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/gateway" />
@@ -200,7 +210,51 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value="jibDockerBuild" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ms-one [jibDockerBuild]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ms-one" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jibDockerBuild" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ms-two [jibDockerBuild]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ms-two" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jibDockerBuild" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -213,11 +267,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.gateway [build]" />
-        <item itemvalue="Gradle.gateway [clean]" />
-        <item itemvalue="Application.GatewayApplication" />
-        <item itemvalue="Application.MsTwoApplication" />
-        <item itemvalue="Application.MsOneApplication" />
+        <item itemvalue="Gradle.config-server [jibDockerBuild]" />
+        <item itemvalue="Gradle.gateway [jibDockerBuild]" />
+        <item itemvalue="Gradle.ms-two [jibDockerBuild]" />
+        <item itemvalue="Gradle.ms-one [jibDockerBuild]" />
+        <item itemvalue="Gradle.discover-server [jibDockerBuild]" />
       </list>
     </recent_temporary>
   </component>
@@ -270,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715667534782</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add authentication and authorization">
+      <option name="closed" value="true" />
+      <created>1715688543560</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715688543560</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -279,17 +341,7 @@
     <MESSAGE value="move loki to 2.8" />
     <MESSAGE value="add entries to prometheus.yml" />
     <MESSAGE value="add spring security" />
-    <option name="LAST_COMMIT_MESSAGE" value="add spring security" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/config/KeycloakRoleConverter.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="add authentication and authorization" />
+    <option name="LAST_COMMIT_MESSAGE" value="add authentication and authorization" />
   </component>
 </project>
